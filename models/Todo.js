@@ -12,6 +12,15 @@ const TodoSchema = new mongoose.Schema({
   userId: {
     type: String,
     required: true
+  },
+  dueDate: {
+    type: Date, //Number? or string for this? hmmm String that gets turned into date object probably
+    //mongoose docs say that you can do { dueDate: Date }
+    required: true
+  },
+  category: {
+    type: String,
+    required: true
   }
 })
 
